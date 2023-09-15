@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My Coding Journey</title>
+    <link>/</link>
+    <description>Recent content on My Coding Journey</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 15 Sep 2023 22:25:50 +0300</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1st Post</title>
+      <link>/posts/post/</link>
+      <pubDate>Fri, 15 Sep 2023 22:25:50 +0300</pubDate>
+      
+      <guid>/posts/post/</guid>
+      <description>This is my first post.</description>
+    </item>
+    
+  </channel>
+</rss>
