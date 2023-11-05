@@ -3,11 +3,11 @@
 <meta http-equiv="content-type" content="text/html">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title itemprop="name">1st Post | My Coding Journey</title>
-<meta property="og:title" content="1st Post | My Coding Journey" />
-<meta name="twitter:title" content="1st Post | My Coding Journey" />
-<meta itemprop="name" content="1st Post | My Coding Journey" />
-<meta name="application-name" content="1st Post | My Coding Journey" />
+<title itemprop="name">Synchronous vs Asynchronous in Web dev | My Coding Journey</title>
+<meta property="og:title" content="Synchronous vs Asynchronous in Web dev | My Coding Journey" />
+<meta name="twitter:title" content="Synchronous vs Asynchronous in Web dev | My Coding Journey" />
+<meta itemprop="name" content="Synchronous vs Asynchronous in Web dev | My Coding Journey" />
+<meta name="application-name" content="Synchronous vs Asynchronous in Web dev | My Coding Journey" />
 <meta property="og:site_name" content="Aly&#39;s Blog" />
 
 <meta name="description" content="Minimal Hugo blog theme with light and dark mode support">
@@ -45,14 +45,14 @@
     {
         "@context": "http://schema.org",
         "@type": "Article",
-        "headline": "1st Post",
+        "headline": "Synchronous vs Asynchronous in Web dev",
         "author": {
         "@type": "Person",
         "name": ""
         },
         "datePublished": "2023-09-15",
         "description": "",
-        "wordCount":  5 ,
+        "wordCount":  628 ,
         "mainEntityOfPage": "True",
         "dateModified": "2023-09-15",
         "image": {
@@ -161,7 +161,7 @@ stroke-linejoin="round" class="feather feather-home">
     <main class="page-content" aria-label="Content">
         <article>
             <header class="header">
-                <h1 class="header-title">1st Post</h1>
+                <h1 class="header-title">Synchronous vs Asynchronous in Web dev</h1>
                 
                 
                 <div class="post-meta">
@@ -171,9 +171,44 @@ stroke-linejoin="round" class="feather feather-home">
             </header>
             <details class="toc">
                 <summary><b>Table of Contents</b></summary>
-                <nav id="TableOfContents"></nav>
+                <nav id="TableOfContents">
+  <ul>
+    <li><a href="#what-the-heck-is-synchronous-and-asynchronous-request">What the heck is synchronous and asynchronous request?</a></li>
+    <li><a href="#synchronous-requests">Synchronous requests</a></li>
+    <li><a href="#asynchronous-requests">Asynchronous requests</a></li>
+    <li><a href="#when-do-we-use-sync-requests">When do we use sync requests?</a></li>
+    <li><a href="#how-does-async-functions-know-that-the-response-is-ready">How does Async functions know that the response is ready?</a></li>
+    <li><a href="#references">References</a></li>
+  </ul>
+</nav>
             </details><div class="page-content">
-                <p>This is my first post.</p>
+                <h2 id="what-the-heck-is-synchronous-and-asynchronous-request">What the heck is synchronous and asynchronous request?</h2>
+<p>Synchronous and asynchronous requests are two distinct approaches to how a client interacts with a server. They are not only related to web development; they are widely used in different areas (such as operating systems). In this article, I will be focusing only on the context of web development.</p>
+<h2 id="synchronous-requests">Synchronous requests</h2>
+<p>In synchronous communication, the client (e.g., a web browser) sends a request to the server,which then gets <strong>blocked</strong> waiting for the response. During this time, the client is idle and can&rsquo;t proceed with any other task, making it less efficient. A very simple example of a synchronous blocking function is the Javascirpt alert function. If you execute this function <code>alert(&quot;Hello Aly&quot;)</code> in the console, you will notice that the browser has become unresponsive, and you cannot do anything other than deal with the alert. Synchronous and asynchronous requests are two distinct approaches to how a client interacts with a server. They are not only related to web development; they are widely used in different areas (such as operating systems). In this article, I will be focusing only on the context of web development.</p>
+<h2 id="asynchronous-requests">Asynchronous requests</h2>
+<p>Asynchronous requests follow a non-blocking model, meaning that the client sends a request and DOES NOT have to wait for the response. It can continue with other tasks. Once the server sends back the response, the client can handle it. This approach offers significant advantages in terms of responsiveness and performance. One of the famous implementations of asynchonous communication is the javascript <code>fetch()</code> function.</p>
+<p>Two important questions might have come to your mind first: why is there sync communication? Async seems much better. Second, how do Async functions know that the response is ready?</p>
+<h2 id="when-do-we-use-sync-requests">When do we use sync requests?</h2>
+<p>Generally speaking, I would say that while developing a web application, you would probably use asynchronous requests 99.9% of the time. However, sync requests may be used in:</p>
+<ul>
+<li>Debbuging and testing: In some testing and debugging scenarios, synchronous requests can simplify the process by ensuring that certain operations occur in a specific order, making it easier to trace and understand the sequence of events.</li>
+<li>Non-Interactive Processes: In cases where user interactivity is not critical, such as batch processing, synchronous requests can be used without causing disruption to the user.</li>
+</ul>
+<h2 id="how-does-async-functions-know-that-the-response-is-ready">How does Async functions know that the response is ready?</h2>
+<p>In general, how asynchronous operations know that the response is ready can vary based on the technology or programming language being used. Some of the common methods are:</p>
+<ul>
+<li>Callbacks: these are functions that get called whenever the response is ready, having the response as a parameter. It is used in programming languages such as Javascript, Python, and C++.</li>
+<li>Events: events are used to notify when a certain action occurs, and event listeners can be used to handle these events. This pattern is commonly used in event-driven programming, such as in graphical user interfaces (GUIs).</li>
+<li>polling: In some cases, asynchronous operations involve polling or checking at intervals to determine if the response is ready. This is common in scenarios like waiting for a job to complete on a remote server or checking for the availability of a resource.</li>
+</ul>
+<p>In web development, the choice between synchronous and asynchronous requests defines user experiences. Synchronous requests have their place in certain scenarios, but modern web development leans heavily on asynchronous approaches for responsiveness and interactivity. Striking the right balance is crucial, as the lines between these paradigms blur. Developers must adapt and choose wisely to create web applications that excel in performance and user engagement, embracing the fluidity of web development for a promising future.</p>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://www.udemy.com/course/fundamentals-of-backend-communications-and-protocols/">Fundamentals of Backend Engineering</a></li>
+<li><a href="https://www.freecodecamp.org/news/synchronous-vs-asynchronous-in-javascript/">Synchronous vs Asynchronous JavaScript – Call Stack, Promises, and More</a></li>
+<li><a href="https://www.geeksforgeeks.org/difference-between-synchronous-and-asynchronous-requests-in-jquery-ajax/">Difference between synchronous and asynchronous requests in jQuery Ajax</a></li>
+</ul>
 
             </div>
         </article></main>

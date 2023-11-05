@@ -8,12 +8,13 @@
     <language>en-us</language>
     <lastBuildDate>Fri, 15 Sep 2023 22:25:50 +0300</lastBuildDate><atom:link href="https://aly-bahaablog.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>1st Post</title>
+      <title>Synchronous vs Asynchronous in Web dev</title>
       <link>https://aly-bahaablog.github.io/posts/post/</link>
       <pubDate>Fri, 15 Sep 2023 22:25:50 +0300</pubDate>
       
       <guid>https://aly-bahaablog.github.io/posts/post/</guid>
-      <description>This is my first post.</description>
+      <description>What the heck is synchronous and asynchronous request? Synchronous and asynchronous requests are two distinct approaches to how a client interacts with a server. They are not only related to web development; they are widely used in different areas (such as operating systems). In this article, I will be focusing only on the context of web development.
+Synchronous requests In synchronous communication, the client (e.g., a web browser) sends a request to the server,which then gets blocked waiting for the response.</description>
     </item>
     
   </channel>
