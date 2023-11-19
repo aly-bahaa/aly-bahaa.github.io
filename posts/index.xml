@@ -6,7 +6,16 @@
     <description>Recent content in Posts on My Coding Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 15 Sep 2023 22:25:50 +0300</lastBuildDate><atom:link href="https://aly-bahaa.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 Nov 2023 22:48:30 +0200</lastBuildDate><atom:link href="https://aly-bahaa.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Prompt Engineering for web developers</title>
+      <link>https://aly-bahaa.github.io/posts/prompt-eng/prompt-eng-post/</link>
+      <pubDate>Mon, 13 Nov 2023 22:48:30 +0200</pubDate>
+      
+      <guid>https://aly-bahaa.github.io/posts/prompt-eng/prompt-eng-post/</guid>
+      <description>🔺 Disclamer Some of the examples are taken from the course &amp;ldquo;prompt engineering for web developers&amp;rdquo; (Link in references) The model used is chatGPT 3.5 🚀 Introduction Generative AI is a cutting-edge technology that enables computers to create human-like text, opening up exciting possibilities across various applications. At the heart of this technology lies prompt engineering, the art of communicating with AI models to yield the best results. As generative AI continues to advance, understanding and mastering prompt engineering becomes increasingly crucial for everyone and especially software developers.</description>
+    </item>
+    
     <item>
       <title>Synchronous vs Asynchronous in Web dev</title>
       <link>https://aly-bahaa.github.io/posts/post/</link>
